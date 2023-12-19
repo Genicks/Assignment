@@ -1,4 +1,4 @@
-import time
+import time 
 print("\nYou're trapped in a pyramid after exploring for treasure. Three doors appear, and you must find a way to escape.\n\n")
 
 escaped = False
