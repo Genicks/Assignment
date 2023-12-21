@@ -40,7 +40,7 @@ while not escaped:
       if decision == "a":
         continue
       if decision == "b":
-        print('\n\nCREATIVE LETTER THAT RHYMES AND GIVE THE PIN OF 123\n\n') #!CONTRIBUTION BY Arti
+        print('\n\nDear Player,\nAs you navigate through this pyramid, remember that the key is as simple as 123, remember that Right is always right\nand if you want to escape you want to escape this pyramid just trust your instincts.\nSincerely, Python 3.11.7 \n\n')
         continue
 
 
@@ -80,12 +80,12 @@ while not escaped:
               print("\nInvalid response!")
               continue
             if doorChosen == "a":
-              print("\n\nMESSAGE FOR WINNING\n\n") #!CONTRIBUTION BY Ishad Hussain
+              print("\n\nYou chose the door on the right\nCongratulation you are now free to leave with all the treasure you can carry\n\nYOU WIN\n\n")#WIN MESSAGE
               escaped = True
               break
             if doorChosen == "b":
               lose = True
-              print("\n\nMESSAGE FOR LOOSING\n\n") #!CONTRIBUTION BY Parsram Persaud
+              print("\n\nYou chose the door on the left!\nYou opened the door and walked towards a sun lit tunnel but you accidentally stepped on a pressure plate\nwhich triggered a trap to open up and throw u into a pit full of spikes\n\n YOU LOSE\n\n")#!LOSE MESSAGE
               break
 
           else:
@@ -94,7 +94,7 @@ while not escaped:
             continue
           
         if inputKey != passKey:
-          print("\n\nMESSAGE FOR LOSING\n\n") #!CONTRIBUTION BY Lionel
+          print("\n\nYou entered the incorrect pin too many times\nThis triggers the security systems and the room fills with toxic gas!\n\nYOU LOSE\n\n")#!LOSE MESSAGE
           break
 
       if lose:
@@ -130,7 +130,9 @@ while not escaped:
       
       if btnOption == "a":
         print('You chose the Red Button')
-        print("\n\nCREATIVE NARRATIVE EXPLAINING PLAYER'S DEATH\n\n") #!CONTRIBUTION BY Nique
+        print("\n\nYou Made a bad decision!") #!LOSE 
+        time.sleep(2)
+        print("You will now die a slow death\nAs the room you're in fill with water!\n\nYOU LOSE\n")
         lose = True
         break
 
